@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+body{
+	
+    background-image: url("http://s392610445.online.de/images/background.jpg");
+}	
+#g{
+		
+		padding-left:15.5cm;
+	}
+	
+
+
+h1{
+	color:#CCFF99;	
+	font-family:Impact;
+	text-align:center;
+	}
+ul{
+	color:#CCCC00;
+	font-family:Arial;
+	padding-left:10cm;
+	
+	
+}
+
+
+h4{
+	color:#3366FF;
+	padding-top:2cm;
+	padding-left:10cm;
+}
+
+
+		
+</style>
+		<title>My Page</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">	
+  </head>
+	<body>
+	<h1>
+<font size="40">GOT LECTURED</font>
+</h1>		
+<div id="g">
+
+	</div>
+	<a href = "python/voice_recorder.py" ><button type="button" class="btn btn-primary btn-lg btn-block" style="height: 350px; width: 350px; left: 1000; top: 1000;"><img src = "https://lh4.ggpht.com/oZ8vTPuOkfTrU-g7DFq615SrVVz18pgrd9oDX4uYPfj1-tFdMuYT4cWVrv--xvqLzCy4=w300-rw" class="img-responsive" alt="I am sexxy and I know it - Gauri"/></button> </a> 
+	
+<h4>
+<font size="8">Courses</font>
+</h4>
+<ul>
+	{% for name in names %}
+
+		<a href="css/{{name}}.html" class="btn btn-primary btn-lg active" role="button">{{name}}</a>
+			<!--<a href="css/{{name}}.html" class = 'name'>{{name}}</a>-->
+			{% endfor %}
+			
+</ul>
+	</body>
+</html>
+
